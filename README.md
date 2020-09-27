@@ -1,3 +1,9 @@
+# Reddit Clone Application
+
+You can check LIVE DEMO version [HERE](https://reddit-clone-ng.herokuapp.com) .
+
+## Development server
+
 Firstly run `npm install`. \
 Create `config` folder in `rootDirectory` and inside add `dev.env` file.
 
