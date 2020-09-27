@@ -1,0 +1,109 @@
+
+nav {
+  box-shadow: 1px 1px 3px 0px #cccccc;
+}
+
+.reddit-icon-svg {
+  height: 50px;
+  padding: 8px 8px 8px 0;
+  width: 50px;
+}
+
+.reddit-text {
+  font-weight: 700;
+  height: 50px;
+  width: 50px;
+}
+@media screen and (max-width: 560px){
+  .reddit-text{
+    display: none;
+  }
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.login, .sign-up {
+  background-color: transparent;
+  color: #0079D3;
+  fill: #0079D3;
+  border: 1px solid #0079D3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 3px 16px;
+  opacity: 1;
+}
+
+.sign-up {
+  background-color: #0079D3;
+  border-color: #0079D3;
+  color: aliceblue;
+}
+
+.sign-up:hover {
+  opacity: 0.6;
+}
+
+.user-details {
+  min-width: 7rem;
+  background-color: transparent;
+  color: #0079D3;
+  fill: #0079D3;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  border: none;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  opacity: 1;
+
+}
+
+.user-details:hover {
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.user-details:focus{
+  outline: 0.2px solid #f8f9fa;
+}
+
+.dropdown-item {
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 6px 9px;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.dropdown-menu {
+  min-width: 7rem!important;
+  box-shadow: 1px 1px 3px 0px #cccccc;
+  border: none;
+  background-color: #ffffff;
+  margin-right: 9px;
+}
+
+.account-icon {
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  float: left;
+  margin-right: 5px;
+  max-height: 26px;
+  max-width: 26px;
+}

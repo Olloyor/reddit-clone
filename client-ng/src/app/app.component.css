@@ -1,0 +1,62 @@
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+
+.card{
+  box-shadow: 1px 1px 3px 0px #cccccc;
+  border: none;
+}
+
+.post {
+  box-shadow: 1px 1px 3px 0px #cccccc;
+  margin: 10px 2px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #878A8C;
+  position: relative;
+  border-radius: 4px;
+  padding: 5px;
+}
+.comment {
+  box-shadow: 1px 1px 3px 0px #cccccc;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #878A8C;
+  position: relative;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.btn-commment {
+  font-size: 0.9rem;
+  border-radius: 2px;
+  color: #878A8C;
+  opacity: 1;
+}
+
+.btn-commment:hover {
+  opacity: 0.65;
+  cursor: pointer;
+}
+
+.post-title {
+  font-size: 28px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.post-url, .post-name {
+  color: black;
+}
+
+
+.post-text {
+  margin-top: 10px;
+}
+
+

@@ -1,0 +1,17 @@
+
+.add-post-textarea{
+  height: 270px;
+  resize: vertical;
+
+}
+
+@media screen and (max-width: 560px){
+  .add-post-textarea{
+    height: 120px;
+  }
+}
+@media screen and (min-width: 561px) and (max-width: 768px){
+  .add-post-textarea{
+    height: 210px;
+  }
+}

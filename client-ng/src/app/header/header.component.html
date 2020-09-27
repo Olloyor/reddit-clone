@@ -1,0 +1,53 @@
+<header>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="flex-grow-1">
+      <a aria-label="Home" class="logo" routerLink="/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="reddit-icon-svg">
+          <g>
+            <circle fill="#FF4500" cx="10" cy="10" r="10"></circle>
+            <path fill="#FFF"
+                  d="M16.67,10A1.46,1.46,0,0,0,14.2,9a7.12,7.12,0,0,0-3.85-1.23L11,4.65,13.14,5.1a1,1,0,1,0,.13-0.61L10.82,4a0.31,0.31,0,0,0-.37.24L9.71,7.71a7.14,7.14,0,0,0-3.9,1.23A1.46,1.46,0,1,0,4.2,11.33a2.87,2.87,0,0,0,0,.44c0,2.24,2.61,4.06,5.83,4.06s5.83-1.82,5.83-4.06a2.87,2.87,0,0,0,0-.44A1.46,1.46,0,0,0,16.67,10Zm-10,1a1,1,0,1,1,1,1A1,1,0,0,1,6.67,11Zm5.81,2.75a3.84,3.84,0,0,1-2.47.77,3.84,3.84,0,0,1-2.47-.77,0.27,0.27,0,0,1,.38-0.38A3.27,3.27,0,0,0,10,14a3.28,3.28,0,0,0,2.09-.61A0.27,0.27,0,1,1,12.48,13.79Zm-0.18-1.71a1,1,0,1,1,1-1A1,1,0,0,1,12.29,12.08Z">
+            </path>
+          </g>
+        </svg>
+        <span class="reddit-text">
+                    Reddit Clone
+                </span>
+      </a>
+    </div>
+    <div class="flex-grow-1 float-right">
+      <div *ngIf="isAuth; else elseBlock" class="dropdown float-right">
+        <button class="user-details dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img class="account-icon" src="https://www.redditstatic.com/avatars/avatar_default_08_D4E815.png"/>
+          {{user ? user.name : 'Welcome'}}
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <button (click)="goToUserProfile()" class="dropdown-item">
+            <svg width="1rem" height="1rem" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                    d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+            </svg>
+            Profile
+          </button>
+          <button (click)="logout()" class="dropdown-item">
+            <svg width="1rem" height="1rem" viewBox="0 0 16 16" class="bi bi-box-arrow-right" fill="currentColor"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                    d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+              <path fill-rule="evenodd"
+                    d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+            </svg>
+            Logout
+          </button>
+        </div>
+      </div>
+      <ng-template #elseBlock>
+        <div>
+          <a routerLink="/register" class="float-right sign-up mr-2">Register</a>
+          <a routerLink="/login" class="float-right login mr-2">Login</a>
+        </div>
+      </ng-template>
+    </div>
+  </nav>
+</header>
